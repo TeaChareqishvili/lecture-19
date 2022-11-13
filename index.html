@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <section class="form-section">
+       
+        <form class="form" action="#" method="get" novalidate >
+            <h1>For Registration Fill The Form</h1>
+            <div class="input-field">
+                <label for="username"> Enter User Name</label>
+                <input  type="text" id="username" placeholder="User name" required >
+                <span class="error" id="username-error"></span>
+            </div>
+            <div class="input-field">
+                <label for="personalnumber"> Enter Personal Number</label>
+                <input class="num" type="number" id="personalnumber" placeholder="Enter Personal Number" min="10" max="10" required >
+                <span class="error" id="number-error"></span>
+            </div>
+            <div class="input-field">
+                <label for="mobilenumber"> Enter Mobile Number</label>
+                <input class="num" type="number" id="mobilenumber" placeholder="Enter Mobile Number" min="11" max="11" required >
+                <span class="error" id="mobile-error"></span>
+            </div>
+            <div class="input-field">
+                <label for="email"> Enter User Email</label>
+                <input  type="email" id="email" placeholder="User Email" required >
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="input-field">
+                <label for="passsworduser"> Enter Password</label>
+                <input  type="password" id="passsworduser" placeholder="Enter Password" min-length="8" required >
+                <span class="error" id="password-error"></span>
+            </div>
+            <div class="input-field">
+                <label for="job-description"> Your Job Description</label>
+                <textarea type ="text" id = "job-description" rows="5" cols="25" placeholder="Describe your job..." required></textarea>
+                <span class="error" id="empty-field"></span>
+            </div>
+            <div  class="input-field">
+                <button type="submit" class="form-btn" >Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

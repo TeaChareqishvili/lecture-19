@@ -1,0 +1,81 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Raleway';
+}
+
+body{
+    background-image:url(./images/regist.jpeg);
+    width:100%;
+   
+   
+}
+h1{
+    font-size:24px;
+    text-align: center;
+    text-decoration: underline;
+    color:rgb(19, 48, 94);
+    font-weight:bold;
+   
+}
+.form{
+    width:70%;
+    margin: 40px auto;
+    border:2px solid rgb(50, 46, 46);
+    padding: 50px 30px;
+    background-color: rgb(155, 152, 152, 0.8);
+    font-size:24px;
+    font-weight: bold;
+    
+}
+
+.input-field{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+
+}
+
+label{
+    margin-right:10px;
+    color:rgb(19, 48, 94);
+}
+
+input{
+    width:30%;
+    height:2rem;
+    padding:5px 10px;
+    border:none;
+    border-bottom:solid grey 2px;
+    background-color:rgba(75, 69, 69, 0.6); 
+    color:azure;
+    outline:none;
+   
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea{
+    background-color:rgba(75, 69, 69, 0.6); 
+    outline: none;
+    padding:5px 10px;
+    resize: none;
+}
+
+::placeholder{
+    color:white;
+}
+
+.form-btn{
+    padding:10px 40px;
+    background-color:rgb(19, 48, 94);
+    border:solid 1px rgb(23, 59, 118);
+    color:azure;
+    font-weight: 600;
+    border-radius:5px;
+}
