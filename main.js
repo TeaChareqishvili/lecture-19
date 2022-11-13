@@ -208,3 +208,6 @@ form.addEventListener('submit', (e)=>{
     modal.classList.remove("open");
     form.reset();
    })
+
+
+   // text areaze ver gavige da mismatchi ar mo0kmedebs ik rom mxolod cifrebi sheamocmos :(( 
