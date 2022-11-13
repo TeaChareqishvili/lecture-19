@@ -11,7 +11,7 @@
 <body>
     <section class="form-section">
        
-        <form class="form" action="#" method="get" novalidate >
+        <form class="form"  id="sign-up" action="#" method="get" novalidate >
             <h1>For Registration Fill The Form</h1>
             <div class="input-field">
                 <label for="username"> Enter User Name</label>
@@ -20,12 +20,12 @@
             </div>
             <div class="input-field">
                 <label for="personalnumber"> Enter Personal Number</label>
-                <input class="num" type="number" id="personalnumber" placeholder="Enter Personal Number" min="10" max="10" required >
+                <input  type="tel" id="personalnumber" placeholder="Enter Personal Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required >
                 <span class="error" id="number-error"></span>
             </div>
             <div class="input-field">
                 <label for="mobilenumber"> Enter Mobile Number</label>
-                <input class="num" type="number" id="mobilenumber" placeholder="Enter Mobile Number" min="11" max="11" required >
+                <input type="tel" id="mobilenumber" placeholder="Enter Mobile Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required >
                 <span class="error" id="mobile-error"></span>
             </div>
             <div class="input-field">
@@ -35,20 +35,30 @@
             </div>
             <div class="input-field">
                 <label for="passsworduser"> Enter Password</label>
-                <input  type="password" id="passsworduser" placeholder="Enter Password" min-length="8" required >
+                <input  type="password" id="passsworduser" placeholder="Enter Password" minlength="8" required >
                 <span class="error" id="password-error"></span>
             </div>
             <div class="input-field">
                 <label for="job-description"> Your Job Description</label>
-                <textarea type ="text" id = "job-description" rows="5" cols="25" placeholder="Describe your job..." required></textarea>
+                <textarea type ="text" id = "job-description" rows="5" cols="25" minlenght="1" maxlength="50" placeholder="Describe your job..." required></textarea>
                 <span class="error" id="empty-field"></span>
             </div>
             <div  class="input-field">
                 <button type="submit" class="form-btn" >Submit</button>
             </div>
-        </form>
+        </form>   
     </section>
 
+    <div class="modal" id="sign-in">
+       <div class="modal-content">
+        <div class="modal-header">
+            <h2>This is modal</h2>
+            <button class="modal-btn">modal close</button>
+        </div>
+        <div class="modal-body"> modal body</div>
+
+       </div>
+    </div>
 
 
 
